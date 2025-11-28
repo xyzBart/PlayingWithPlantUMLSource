@@ -65,7 +65,7 @@ these building blocks for architecture diagrams:
 3.  <https://www.microsoft.com/en-us/download/details.aspx?id=41937>
 
 These are the types of diagrams used for describing architectures as we
-see in `Create Real Life AWS Diagrams` where we recreate diagrams from
+see in [Create Real Life AWS Diagrams](/docs/aws/aws.md) where we recreate diagrams from
 the AWS architecture blog.
 
 - These establish a shared lexicon of understanding and allow users to
@@ -81,7 +81,7 @@ These building block icons can be used with
 
 1.  architecture diagrams to give an overview of the building blocks and
     how they are connected
-2.  `c4-label` to give static views at different levels
+2.  [C4 Lightweight Software Architecture Description Method ](../C4/c4.md) to give static views at different levels
 3.  sequence diagrams to give dynamic views at different levels
 
 ## Interview with Arnaud Roques (creator of PlantUML)
