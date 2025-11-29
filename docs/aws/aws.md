@@ -45,11 +45,35 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="">
 
-./1.7.puml
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+!include <awslib/GroupIcons/all.puml>
 
-</div>
+ skinparam linetype polyline
+' skinparam linetype ortho
+
+package "AWS Cloud" {
+EC2(Smadex, "Smadex Service", " ")
+}
+
+Users(Users, "Users", " ")
+TraditionalServer(AdExchange, "Ad Exchange", " ")
+Mobile(Mobile, "Publisher app or web", " ")
+
+Users -down-> Mobile: 1. Visits
+Mobile -right-> AdExchange: 2. Start auction
+AdExchange -right-> Smadex: 3. Bid request / response
+Smadex -left-> Mobile: 4. Show Ad
+Users -right-> Smadex: 5. Impression / click / install / event {request id}
+@enduml
+```
+
 
 ### Select an icon library
 
@@ -81,11 +105,18 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="" emphasize-lines="7">
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
 
-./1.1.puml
+listsprites
+@enduml
+```
 
-</div>
+
 
 ### Gather the icons we need
 
@@ -115,11 +146,24 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="">
 
-./1.puml
 
-</div>
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+
+EC2(EC2, "label", "tech")
+Users(Users, "label", "tech")
+TraditionalServer(TraditionalServer, "label", "tech")
+Mobile(Mobile, "label", "tech")
+
+@enduml
+```
+
+
 
 ### Add Text To Icons
 
@@ -136,11 +180,23 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="" emphasize-lines="7-10">
 
-./1.2.puml
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
 
-</div>
+EC2(EC2, "Smadex Service", " ")
+Users(Users, "Users", " ")
+TraditionalServer(TraditionalServer, "Ad Exchange", " ")
+Mobile(Mobile, "Publisher app or web", " ")
+
+@enduml
+```
+
+
 
 ### Simplify The Icons
 
@@ -157,11 +213,24 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="" emphasize-lines="3">
 
-./1.3.puml
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
 
-</div>
+EC2(EC2, "Smadex Service", " ")
+Users(Users, "Users", " ")
+TraditionalServer(TraditionalServer, "Ad Exchange", " ")
+Mobile(Mobile, "Publisher app or web", " ")
+
+@enduml
+```
+
+
 
 ### Connect The Icons
 
@@ -178,11 +247,29 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="" emphasize-lines="13-17">
 
-./1.4.puml
 
-</div>
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+
+EC2(Smadex, "Smadex Service", " ")
+Users(Users, "Users", " ")
+TraditionalServer(AdExchange, "Ad Exchange", " ")
+Mobile(Mobile, "Publisher app or web", " ")
+
+Users -down-> Mobile: 1. Visits
+Mobile -right-> AdExchange: 2. Start auction
+AdExchange -right-> Smadex: 3. Bid request / response
+Smadex -left-> Mobile: 4. Show Ad
+Users -right-> Smadex: 5. Impression / click / install / event {request id}
+@enduml
+```
+
 
 ### Change the Layout: ortho
 
@@ -199,11 +286,35 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="" emphasize-lines="8,9">
 
-./1.5.puml
 
-</div>
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+
+' skinparam linetype polyline
+ skinparam linetype ortho
+
+EC2(Smadex, "Smadex Service", " ")
+Users(Users, "Users", " ")
+TraditionalServer(AdExchange, "Ad Exchange", " ")
+Mobile(Mobile, "Publisher app or web", " ")
+
+Users -down-> Mobile: 1. Visits
+Mobile -right-> AdExchange: 2. Start auction
+AdExchange -right-> Smadex: 3. Bid request / response
+Smadex -left-> Mobile: 4. Show Ad
+Users -right-> Smadex: 5. Impression / click / install / event {request id}
+@enduml
+
+
+```
+
+
 
 ### Change the Layout: polyline
 
@@ -220,11 +331,33 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="" emphasize-lines="8,9">
 
-./1.6.puml
 
-</div>
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+
+skinparam linetype polyline
+' skinparam linetype ortho
+
+EC2(Smadex, "Smadex Service", " ")
+Users(Users, "Users", " ")
+TraditionalServer(AdExchange, "Ad Exchange", " ")
+Mobile(Mobile, "Publisher app or web", " ")
+
+Users -down-> Mobile: 1. Visits
+Mobile -right-> AdExchange: 2. Start auction
+AdExchange -right-> Smadex: 3. Bid request / response
+Smadex -left-> Mobile: 4. Show Ad
+Users -right-> Smadex: 5. Impression / click / install / event {request id}
+@enduml
+```
+
+
 
 ### Add A Box: package
 
@@ -241,11 +374,37 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="" emphasize-lines="12">
 
-./1.7.puml
 
-</div>
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+!include <awslib/GroupIcons/all.puml>
+
+ skinparam linetype polyline
+' skinparam linetype ortho
+
+package "AWS Cloud" {
+EC2(Smadex, "Smadex Service", " ")
+}
+
+Users(Users, "Users", " ")
+TraditionalServer(AdExchange, "Ad Exchange", " ")
+Mobile(Mobile, "Publisher app or web", " ")
+
+Users -down-> Mobile: 1. Visits
+Mobile -right-> AdExchange: 2. Start auction
+AdExchange -right-> Smadex: 3. Bid request / response
+Smadex -left-> Mobile: 4. Show Ad
+Users -right-> Smadex: 5. Impression / click / install / event {request id}
+@enduml
+```
+
+
 
 ## [AWSArchitectureBlogSample2](#awsarchitectureblogsample2)
 
@@ -290,11 +449,135 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="">
 
-2.6.puml
 
-</div>
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+!include <awslib/GroupIcons/all.puml>
+!include <awslib/Storage/all.puml>
+!include <awslib/ManagementAndGovernance/all.puml>
+!include <awslib/CustomerEngagement/all.puml>
+!include <awslib/MachineLearning/all.puml>
+!include <awslib/NetworkingAndContentDelivery/all.puml>
+!include <awslib/Database/all.puml>
+!include <awslib/ApplicationIntegration/all.puml>
+!include <awslib/ApplicationIntegration/SNS.puml>
+!include <awslib/CustomerEngagement/SESEmail.puml>
+
+
+
+'Compute/General
+'Storage/SimpleStorageServiceS3.png
+'ApplicationIntegration/SQS.png
+'Compute/Lambda.png
+'Compute/EC2
+'ManagementAndGovernance/CloudWatch.png
+'CustomerEngagement/SESEmail.png
+'MachineLearning/SageMaker.png
+''Mobile/APIGateway.png
+'NetworkingAndContentDelivery/APIGateway2.png
+'Database/Aurora.png
+'ApplicationIntegration/SQSQueue.png
+
+
+skinparam linetype polyline
+' skinparam linetype ortho
+
+'top left section 
+'-------------------------------------------------------------
+package EC2_Instance {
+General(IngestionApp, "Ingestion App", " ")
+General(ChunkingApp, "Chunking Orchestration App", " ")
+}
+
+SimpleStorageServiceS3(S3Staging, "Amazon S3 Staging Bucket", " ")
+SQS(SQSIngest, "Amazon SQS Ingest Queue", " ")
+
+Lambda(LambdaTrigger, "AWS Lambda Trigger Function", " ")
+
+LambdaTrigger -up-> IngestionApp
+IngestionApp -up-> SQSIngest
+SQSIngest -down-> ChunkingApp
+S3Staging -down-> EC2_Instance
+
+'top right section 
+'-------------------------------------------------------------
+SQS(SQSLargeFileQueue, "Amazon SQS Large File Queue", " ")
+SQS(SQSSmallFileQueue, "Amazon SQS Small File Queue", " ")
+SQS(SQSSingleFileQueue, "Amazon SQS Single File Queue", " ")
+
+EC2(LargeFileChunkingAppEC2, "Large File Chunking App on EC2", " ")
+Lambda(LambdaSmallFileChunking, "Small File Chunking Lambda", " ")
+Lambda(ImageConversionLambdaFunction, "Image Conversion Lambda Function", " ")
+
+'todo dashed line boundary
+package DLQ {
+SQSQueue(DLQ1, "DLQ", " ")
+SQSQueue(DLQ2, "DLQ", " ")
+SQSQueue(DLQ3, "DLQ", " ")
+}
+
+ChunkingApp -right-> SQSLargeFileQueue
+ChunkingApp -right-> SQSSmallFileQueue
+ChunkingApp -right-> SQSSingleFileQueue
+
+SQSLargeFileQueue -right-> LargeFileChunkingAppEC2
+LargeFileChunkingAppEC2 -down-> SQSSmallFileQueue
+SQSSmallFileQueue -right-> LambdaSmallFileChunking
+LambdaSmallFileChunking -down-> SQSSingleFileQueue
+SQSSingleFileQueue -right-> ImageConversionLambdaFunction
+
+'todo dashed line
+SQSLargeFileQueue -down-> DLQ1
+SQSSmallFileQueue -down-> DLQ2
+SQSSingleFileQueue -down-> DLQ3
+
+
+'bottom right section 
+'-------------------------------------------------------------
+
+SimpleStorageServiceS3(S3Images, "Amazon S3 Images Bucket", " ")
+EC2(EC2DLQFailsafeApp, "DLQ Failsafe App on EC2", " ")
+SQS(SQSConvertedImageQueue, "Amazon SQS Converted Image Queue", " ")
+Lambda(LambdaInferenceInvocation, "Inference Invocation Lambda Function", " ")
+Aurora(Aurora, "Amazon Aurora", " ")
+APIGateway(AmazonAPIGateway, "Amazon API Gateway", "")
+SageMaker(AmazonSageMaker, "Amazon SageMaker Endpoint", "")
+
+DLQ1 -down-> EC2DLQFailsafeApp
+DLQ2 -down-> EC2DLQFailsafeApp
+DLQ3 -down-> EC2DLQFailsafeApp
+
+EC2DLQFailsafeApp -right-> S3Images
+
+ImageConversionLambdaFunction -down-> S3Images
+S3Images -down-> SQSConvertedImageQueue
+SQSConvertedImageQueue -left-> LambdaInferenceInvocation
+LambdaInferenceInvocation -down-> Aurora
+'LambdaInferenceInvocation -left-> APIGateway
+'APIGateway -left-> SageMaker
+
+
+'bottom left section 
+'-------------------------------------------------------------
+
+CloudWatch(CloudWatch, "Amazon Cloudwatch", " ")
+SNS(SNS1, "Amazon SNS", "")
+SESEmail(SESEmail, "Email Notification", "")
+
+CloudWatch --> DLQ
+CloudWatch -down-> SNS1
+SNS1 -down-> SESEmail
+@enduml
+```
+
+
+
 
 ### Second Pass: Tweak
 
@@ -316,11 +599,136 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="">
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+!include <awslib/GroupIcons/all.puml>
+!include <awslib/Storage/all.puml>
+!include <awslib/ManagementAndGovernance/all.puml>
+!include <awslib/CustomerEngagement/all.puml>
+!include <awslib/MachineLearning/all.puml>
+!include <awslib/NetworkingAndContentDelivery/all.puml>
+!include <awslib/Database/all.puml>
+!include <awslib/ApplicationIntegration/all.puml>
 
-2.8.puml
 
-</div>
+
+
+
+'Compute/General
+'Storage/SimpleStorageServiceS3.png
+'ApplicationIntegration/SQS.png
+'Compute/Lambda.png
+'Compute/EC2
+'ManagementAndGovernance/CloudWatch.png
+'CustomerEngagement/SESEmail.png
+'MachineLearning/SageMaker.png
+''Mobile/APIGateway.png
+'NetworkingAndContentDelivery/APIGateway2.png
+'Database/Aurora.png
+'ApplicationIntegration/SQSQueue.png
+
+
+skinparam linetype polyline
+' skinparam linetype ortho
+
+'top left section 
+'-------------------------------------------------------------
+package EC2_Instance {
+General(IngestionApp, "Ingestion App", " ")
+General(ChunkingApp, "Chunking Orchestration App", " ")
+}
+
+SimpleStorageServiceS3(S3Staging, "Amazon S3 Staging Bucket", " ")
+SQS(SQSIngest, "Amazon SQS Ingest Queue", " ")
+
+Lambda(LambdaTrigger, "AWS Lambda Trigger Function", " ")
+
+LambdaTrigger -up-> IngestionApp
+IngestionApp -up-> SQSIngest
+SQSIngest -down-> ChunkingApp
+S3Staging <-down-> EC2_Instance
+
+'top right section 
+'-------------------------------------------------------------
+together {
+SQS(SQSLargeFileQueue, "Amazon SQS Large File Queue", " ")
+SQS(SQSSmallFileQueue, "Amazon SQS Small File Queue", " ")
+SQS(SQSSingleFileQueue, "Amazon SQS Single File Queue", " ")
+
+EC2(LargeFileChunkingAppEC2, "Large File Chunking App on EC2", " ")
+Lambda(LambdaSmallFileChunking, "Small File Chunking Lambda", " ")
+Lambda(ImageConversionLambdaFunction, "Image Conversion Lambda Function", " ")
+}
+'todo dashed line boundary
+package DLQ {
+SQSQueue(DLQ1, "DLQ", " ")
+SQSQueue(DLQ2, "DLQ", " ")
+SQSQueue(DLQ3, "DLQ", " ")
+}
+
+ChunkingApp -right-> SQSLargeFileQueue
+ChunkingApp -right-> SQSSmallFileQueue
+ChunkingApp -right-> SQSSingleFileQueue
+
+SQSLargeFileQueue -right-> LargeFileChunkingAppEC2
+LargeFileChunkingAppEC2 -down-> SQSSmallFileQueue
+SQSSmallFileQueue -right-> LambdaSmallFileChunking
+LambdaSmallFileChunking -down-> SQSSingleFileQueue
+SQSSingleFileQueue -right-> ImageConversionLambdaFunction
+
+'todo dashed line
+SQSLargeFileQueue -down-> DLQ1
+SQSSmallFileQueue -down-> DLQ2
+SQSSingleFileQueue -down-> DLQ3
+
+
+'bottom right section 
+'-------------------------------------------------------------
+
+SimpleStorageServiceS3(S3Images, "Amazon S3 Images Bucket", " ")
+EC2(EC2DLQFailsafeApp, "DLQ Failsafe App on EC2", " ")
+SQS(SQSConvertedImageQueue, "Amazon SQS Converted Image Queue", " ")
+Lambda(LambdaInferenceInvocation, "Inference Invocation Lambda Function", " ")
+Aurora(Aurora, "Amazon Aurora", " ")
+APIGateway(AmazonAPIGateway, "Amazon API Gateway", "")
+SageMaker(AmazonSageMaker, "Amazon SageMaker Endpoint", "")
+
+DLQ1 -down-> EC2DLQFailsafeApp
+DLQ2 -down-> EC2DLQFailsafeApp
+DLQ3 -down-> EC2DLQFailsafeApp
+
+EC2DLQFailsafeApp -right-> S3Images
+
+ImageConversionLambdaFunction -down-> S3Images
+S3Images -down-> SQSConvertedImageQueue
+SQSConvertedImageQueue -left-> LambdaInferenceInvocation
+LambdaInferenceInvocation -down-> Aurora
+LambdaInferenceInvocation <-left-> AmazonAPIGateway
+AmazonAPIGateway <-left-> AmazonSageMaker
+
+
+'bottom left section 
+'-------------------------------------------------------------
+
+CloudWatch(CloudWatch, "Amazon Cloudwatch", " ")
+SNS(SNS1, "Amazon SNS", "")
+SESEmail(SESEmail, "Email Notification", "")
+
+CloudWatch -right-> DLQ
+CloudWatch -left-> SNS1
+SNS1 -left-> SESEmail
+
+footer %filename() rendered with PlantUML version %version()\nThe Hitchhiker’s Guide to PlantUML
+@enduml
+```
+
+
+
 
 ## [AWSArchitectureBlogSample3](#awsarchitectureblogsample3)
 
@@ -337,11 +745,151 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="">
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+!include <awslib/GroupIcons/all.puml>
+!include <awslib/CustomerEngagement/all.puml>
+!include <awslib/NetworkingAndContentDelivery/all.puml>
+!include <awslib/EndUserComputing/all.puml>
+!include <awslib/ApplicationIntegration/all.puml>
 
-./3.8.puml
+'skinparam linetype polyline
 
-</div>
+
+!unquoted procedure $PublicSubnet($MySprite, $alias, $description="", $label="", $technology="", $scale=1, $colour="blue", $shape="", $textsize="18")
+
+    skinparam rectangle {
+        backgroundColor<<$alias>> e6ffef
+        borderColor<<$alias>> e6ffef
+        shadowing<<$alias>> true
+    }
+    rectangle $alias <<$alias>> as "
+        <color:3F8624><$VPCSubnetPublic*.4> Public Subnet</color>\n
+        <color:$colour><$MySprite></color>\n$label" 
+
+!endprocedure
+
+!unquoted procedure $PrivateSubnet($MySprite, $alias, $description="", $label="", $technology="", $scale=1, $colour="blue", $shape="", $textsize="18")
+
+    skinparam rectangle {
+        backgroundColor<<$alias>> e6fbff
+        borderColor<<$alias>> e6fbff
+        shadowing<<$alias>> true
+    }
+    
+    rectangle $alias <<$alias>> as "
+        <color:3B48CC><$VPCSubnetPrivate*.4> Private Subnet</color>\n
+        <color:$colour><$MySprite></color>\n$label" 
+
+!endprocedure
+
+
+!unquoted procedure $VPCNet($MySprite, $alias, $description="", $label="", $technology="", $scale=1, $colour="blue", $shape="", $textsize="18")
+
+    skinparam rectangle {
+        backgroundColor<<$alias>> white
+        borderColor<<$alias>> e6fbff
+        shadowing<<$alias>> true
+    }
+    
+    rectangle $alias <<$alias>> as "
+        <color:3F8624><$VPC*.4></color> <color:grey>$label</color>\n
+        <color:$colour><$MySprite></color>\n$description" 
+
+!endprocedure
+
+'note the "=" denotes heading 1
+skinparam rectangle {
+        backgroundColor<<BBVA>> white
+        borderColor<<BBVA>> white
+        shadowing<<$alias>> false
+    }
+rectangle  BBVA <<BBVA>> as "
+        =<color:blue>BBVA</color>\n
+        \nAuthentication Service" 
+
+
+
+AutoScalingGroup(AutoScalingGroup1, "Auto Scaling Group", "")
+ELBNetworkLoadBalancer(ELBNetworkLoadBalancer, "Network Load Balancer", " ")
+VPCInternetGateway(VPCInternetGateway, "Internet Gateway", " ")
+InternetAlt1(InternetAlt1, "Internet", " ")
+'VPCElasticNetworkInterface(VPCElasticNetworkInterface, " ", " ")
+
+VPCInternetGateway -u-> InternetAlt1
+VPCVPNConnection(VPCVPNConnection, "VPN\nConnection", " ")
+DirectConnect(DirectConnect, "Direct\nConnect", " ")
+TransitGateway(S3TransitGatewayStaging, "TransitGateway", " ")
+
+VPCCustomerGateway(VPCCustomerGateway, " ", " ")
+'Appstream2_0(Appstream2_0, " ", " ")
+Cloudalt(Cloudalt, " ", " ")
+User(User, "BBVA Employee", " ")
+
+
+'package "BBVA VPC 2"
+'{
+
+    'package "Availability Zone 1"
+    '{
+
+        $PublicSubnet($EC2Instance, EC2Instance1, $label="Proxy Instance",  $colour="D86613")
+
+        $PrivateSubnet($ELBNetworkLoadBalancer, ELBNetworkLoadBalancer1, $colour="D86613")
+
+        EC2Instance1 --[hidden]> ELBNetworkLoadBalancer1
+
+    '}
+
+
+    'package "Availability Zone 2"
+    '{
+
+        $PublicSubnet($EC2Instance, EC2Instance2, $label="Proxy Instance",  $colour="D86613")
+
+        $PrivateSubnet($ELBNetworkLoadBalancer, ELBNetworkLoadBalancer2, $colour="D86613")
+
+        EC2Instance2 --[hidden]> ELBNetworkLoadBalancer2
+
+    '}
+'}
+
+
+$VPCNet($VPCElasticNetworkInterface, VPCElasticNetworkInterface2, $label="BBVA VPC 1", $colour="purple")
+$VPCNet($Appstream2_0, Appstream2_02, $label="Appstream 2.0 VPC", $description="Appstream 2.0", $colour="purple")
+'$MyOnPrem($VPCCustomerGateway, $label="Customer Gateway")
+
+EC2Instance1 -r-> AutoScalingGroup1
+AutoScalingGroup1 -r-> EC2Instance2
+
+ELBNetworkLoadBalancer1 -r-> ELBNetworkLoadBalancer
+ELBNetworkLoadBalancer -r->ELBNetworkLoadBalancer2
+
+S3TransitGatewayStaging -u-> DirectConnect
+S3TransitGatewayStaging -u-> VPCVPNConnection
+S3TransitGatewayStaging -> EC2Instance1
+DirectConnect -u-> VPCCustomerGateway
+VPCVPNConnection -u-> VPCCustomerGateway
+
+Appstream2_02 -d-> VPCElasticNetworkInterface2 
+VPCElasticNetworkInterface2 -> S3TransitGatewayStaging
+
+
+User -d-> BBVA 
+BBVA -d-> Appstream2_02
+
+
+@enduml
+
+  
+    
+```
+
 
 ### Gather the icons we need
 
@@ -358,11 +906,40 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="">
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+'!include <awslib/Compute/all.puml>
+'!include <awslib/mobile/all.puml>
+'!include <awslib/general/all.puml>
+!include <awslib/GroupIcons/all.puml>
+!include <awslib/CustomerEngagement/all.puml>
+!include <awslib/NetworkingAndContentDelivery/all.puml>
+!include <awslib/EndUserComputing/all.puml>
+!include <awslib/ApplicationIntegration/all.puml>
 
-./3.1.puml
+listsprites
 
-</div>
+'Appstream2_0
+'AutoScalingGroup
+'EC2Instance
+'InternetAlt1
+'DirectConnect
+'VPCVPNConnection
+'VPCSubnetPublic
+'VPCSubnetPrivate
+'VPCInternetGateway
+'VPCCustomerGateway
+'TransitGateway
+'VPCElasticNetworkInterface
+'ELBNetworkLoadBalancer
+
+'Cloudalt
+
+@enduml
+```
+
 
 ### Add Text and Simplify The Icons
 
@@ -374,11 +951,43 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="">
 
-./3.3.puml
 
-</div>
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+!include <awslib/GroupIcons/all.puml>
+!include <awslib/CustomerEngagement/all.puml>
+!include <awslib/NetworkingAndContentDelivery/all.puml>
+!include <awslib/EndUserComputing/all.puml>
+!include <awslib/ApplicationIntegration/all.puml>
+
+
+Appstream2_0(Appstream2_0, " ", " ")
+AutoScalingGroup(AutoScalingGroup, " ", " ")
+EC2Instance(EC2Instance, " ", " ")
+InternetAlt1(InternetAlt1, " ", " ")
+DirectConnect(DirectConnect, " ", " ")
+VPCVPNConnection(VPCVPNConnection, " ", " ")
+VPCSubnetPublic(VPCSubnetPublic, " ", " ")
+VPCSubnetPrivate(VPCSubnetPrivate, " ", " ")
+VPCInternetGateway(VPCInternetGateway, " ", " ")
+VPCCustomerGateway(VPCCustomerGateway, " ", " ")
+TransitGateway(S3TransitGatewayStaging, " ", " ")
+VPCElasticNetworkInterface(VPCElasticNetworkInterface, " ", " ")
+ELBNetworkLoadBalancer(ELBNetworkLoadBalancer, " ", " ")
+
+Cloudalt(Cloudalt, " ", " ")
+
+@enduml
+```
+
+
+
 
 ### Draw Boxes
 
@@ -390,11 +999,42 @@ Press to play around with this diagram source online.
 
 #### Source
 
-<div class="literalinclude" linenos="">
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+!include <awslib/GroupIcons/all.puml>
+!include <awslib/CustomerEngagement/all.puml>
+!include <awslib/NetworkingAndContentDelivery/all.puml>
+!include <awslib/EndUserComputing/all.puml>
+!include <awslib/ApplicationIntegration/all.puml>
 
-./3.4.puml
 
-</div>
+skinparam rectangle {
+    backgroundColor<<box1>> e6fbff
+    borderColor<<$box1>> e6fbff
+    shadowing<<$box1>> true
+    
+    backgroundColor<<box2>> e6ffef
+    borderColor<<$box2>> e6ffef
+    shadowing<<$box2>> true
+}
+
+package "AZ"
+{
+
+rectangle box2 <<box2>> as "<color:3F8624><$VPCSubnetPublic*.4> Public Subnet</color>\n
+    <color:D86613><$EC2Instance></color>\nProxy Instance" 
+
+rectangle box1 <<box1>> as "<color:3B48CC><$VPCSubnetPrivate*.4> Private Subnet</color>\n
+    <color:D86613><$ELBNetworkLoadBalancer></color>\n" 
+}
+@enduml
+```
+
 
 ### Draw Boxes with Procedures
 
@@ -412,8 +1052,147 @@ have to.
 
 #### Source
 
-<div class="literalinclude" linenos="">
+```
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+!include <awslib/GroupIcons/all.puml>
+!include <awslib/CustomerEngagement/all.puml>
+!include <awslib/NetworkingAndContentDelivery/all.puml>
+!include <awslib/EndUserComputing/all.puml>
+!include <awslib/ApplicationIntegration/all.puml>
 
-./3.8.puml
+'skinparam linetype polyline
 
-</div>
+
+!unquoted procedure $PublicSubnet($MySprite, $alias, $description="", $label="", $technology="", $scale=1, $colour="blue", $shape="", $textsize="18")
+
+    skinparam rectangle {
+        backgroundColor<<$alias>> e6ffef
+        borderColor<<$alias>> e6ffef
+        shadowing<<$alias>> true
+    }
+    rectangle $alias <<$alias>> as "
+        <color:3F8624><$VPCSubnetPublic*.4> Public Subnet</color>\n
+        <color:$colour><$MySprite></color>\n$label" 
+
+!endprocedure
+
+!unquoted procedure $PrivateSubnet($MySprite, $alias, $description="", $label="", $technology="", $scale=1, $colour="blue", $shape="", $textsize="18")
+
+    skinparam rectangle {
+        backgroundColor<<$alias>> e6fbff
+        borderColor<<$alias>> e6fbff
+        shadowing<<$alias>> true
+    }
+    
+    rectangle $alias <<$alias>> as "
+        <color:3B48CC><$VPCSubnetPrivate*.4> Private Subnet</color>\n
+        <color:$colour><$MySprite></color>\n$label" 
+
+!endprocedure
+
+
+!unquoted procedure $VPCNet($MySprite, $alias, $description="", $label="", $technology="", $scale=1, $colour="blue", $shape="", $textsize="18")
+
+    skinparam rectangle {
+        backgroundColor<<$alias>> white
+        borderColor<<$alias>> e6fbff
+        shadowing<<$alias>> true
+    }
+    
+    rectangle $alias <<$alias>> as "
+        <color:3F8624><$VPC*.4></color> <color:grey>$label</color>\n
+        <color:$colour><$MySprite></color>\n$description" 
+
+!endprocedure
+
+'note the "=" denotes heading 1
+skinparam rectangle {
+        backgroundColor<<BBVA>> white
+        borderColor<<BBVA>> white
+        shadowing<<$alias>> false
+    }
+rectangle  BBVA <<BBVA>> as "
+        =<color:blue>BBVA</color>\n
+        \nAuthentication Service" 
+
+
+
+AutoScalingGroup(AutoScalingGroup1, "Auto Scaling Group", "")
+ELBNetworkLoadBalancer(ELBNetworkLoadBalancer, "Network Load Balancer", " ")
+VPCInternetGateway(VPCInternetGateway, "Internet Gateway", " ")
+InternetAlt1(InternetAlt1, "Internet", " ")
+'VPCElasticNetworkInterface(VPCElasticNetworkInterface, " ", " ")
+
+VPCInternetGateway -u-> InternetAlt1
+VPCVPNConnection(VPCVPNConnection, "VPN\nConnection", " ")
+DirectConnect(DirectConnect, "Direct\nConnect", " ")
+TransitGateway(S3TransitGatewayStaging, "TransitGateway", " ")
+
+VPCCustomerGateway(VPCCustomerGateway, " ", " ")
+'Appstream2_0(Appstream2_0, " ", " ")
+Cloudalt(Cloudalt, " ", " ")
+User(User, "BBVA Employee", " ")
+
+
+'package "BBVA VPC 2"
+'{
+
+    'package "Availability Zone 1"
+    '{
+
+        $PublicSubnet($EC2Instance, EC2Instance1, $label="Proxy Instance",  $colour="D86613")
+
+        $PrivateSubnet($ELBNetworkLoadBalancer, ELBNetworkLoadBalancer1, $colour="D86613")
+
+        EC2Instance1 --[hidden]> ELBNetworkLoadBalancer1
+
+    '}
+
+
+    'package "Availability Zone 2"
+    '{
+
+        $PublicSubnet($EC2Instance, EC2Instance2, $label="Proxy Instance",  $colour="D86613")
+
+        $PrivateSubnet($ELBNetworkLoadBalancer, ELBNetworkLoadBalancer2, $colour="D86613")
+
+        EC2Instance2 --[hidden]> ELBNetworkLoadBalancer2
+
+    '}
+'}
+
+
+$VPCNet($VPCElasticNetworkInterface, VPCElasticNetworkInterface2, $label="BBVA VPC 1", $colour="purple")
+$VPCNet($Appstream2_0, Appstream2_02, $label="Appstream 2.0 VPC", $description="Appstream 2.0", $colour="purple")
+'$MyOnPrem($VPCCustomerGateway, $label="Customer Gateway")
+
+EC2Instance1 -r-> AutoScalingGroup1
+AutoScalingGroup1 -r-> EC2Instance2
+
+ELBNetworkLoadBalancer1 -r-> ELBNetworkLoadBalancer
+ELBNetworkLoadBalancer -r->ELBNetworkLoadBalancer2
+
+S3TransitGatewayStaging -u-> DirectConnect
+S3TransitGatewayStaging -u-> VPCVPNConnection
+S3TransitGatewayStaging -> EC2Instance1
+DirectConnect -u-> VPCCustomerGateway
+VPCVPNConnection -u-> VPCCustomerGateway
+
+Appstream2_02 -d-> VPCElasticNetworkInterface2 
+VPCElasticNetworkInterface2 -> S3TransitGatewayStaging
+
+
+User -d-> BBVA 
+BBVA -d-> Appstream2_02
+
+
+@enduml
+
+  
+    
+```
