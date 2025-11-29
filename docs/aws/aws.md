@@ -37,11 +37,11 @@ We'll approach them in order of complexity.
 [<img src="../play.png" width="40" alt="playbutton_aws0" />](http://www.plantuml.com/plantuml/uml/VP3BRnD13CRlyrUOlH0aiX45BX6g6g8AzO24j3pEpewRjU9vC8-cLTN_7IVBAfK8lUnuxD_tVPwzoWLJgKxCA_QzL4lm2VTPUBDO_UhMmRdWBy_EEdPH-9R9jb7rPo1LnrfeWIB_GrpOiBn8RCbJGda9-P92ZJTzyFaPPI3ls4TCw43OKtc81378m-5YNf-RXbI6O4p4VeTRWaOV2Mi9rJRmQAxN5xFEeQNxjz2C1NIKxhYdHZlGl35Fnlp8bFBi-DNcyPoctnDQBXmyoa57QRQor_VzW7vBYgmiJBT9yVNuSsRZeRrlTIES1qg0CK98iAVDn8x9CBTXx-UNC6gMyAw5dvovvBzcC4-y7OeIf_0bNBJG5Km5iFQ73SrfU1ACRrx2-nO-iuL4lolb0WkjSWm-ana9c0lTbcSxV53t8UmrSLpoNykFBToug3vPmzMn5-vtUhBF1KMqeZlo1HwdKBPFvegyhKx-0000_)
 Press to play around with this diagram source online.
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/1.7.png)
 
-</div>
+
 
 #### Source
 
@@ -92,11 +92,11 @@ We can see all the icons here:
 
 ### Find Icons
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/1.1.png)
 
-</div>
+
 
 #### Play
 
@@ -133,11 +133,11 @@ listsprites
 > `` `autonumber ``\` does not work in these diagrams. So we will
 > manually number the arrows.
 
-<div class="uml" align="center">
+
 
 1.puml
 
-</div>
+
 
 #### Play
 
@@ -167,11 +167,11 @@ Mobile(Mobile, "label", "tech")
 
 ### Add Text To Icons
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/1.2.png)
 
-</div>
+
 
 #### Play
 
@@ -200,11 +200,11 @@ Mobile(Mobile, "Publisher app or web", " ")
 
 ### Simplify The Icons
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/1.3.png)
 
-</div>
+
 
 #### Play
 
@@ -234,11 +234,11 @@ Mobile(Mobile, "Publisher app or web", " ")
 
 ### Connect The Icons
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/1.4.png)
 
-</div>
+
 
 #### Play
 
@@ -273,11 +273,11 @@ Users -right-> Smadex: 5. Impression / click / install / event {request id}
 
 ### Change the Layout: ortho
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/1.5.png)
 
-</div>
+
 
 #### Play
 
@@ -318,11 +318,11 @@ Users -right-> Smadex: 5. Impression / click / install / event {request id}
 
 ### Change the Layout: polyline
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/1.6.png)
 
-</div>
+
 
 #### Play
 
@@ -361,11 +361,11 @@ Users -right-> Smadex: 5. Impression / click / install / event {request id}
 
 ### Add A Box: package
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/1.7.png)
 
-</div>
+
 
 #### Play
 
@@ -415,7 +415,7 @@ Users -right-> Smadex: 5. Impression / click / install / event {request id}
 [<img src="../play.png" width="40" alt="playbutton_aws2_0" />](http://www.plantuml.com/plantuml/uml/hLPTRkCs47xdAQO15bQ0UXSRlmQBTPsV6aZI3RH5NWeKj3IMYL2aG54nqiK2lKQlrvDq98gKR4lgmoQ08l6RRsR8RuOqFvUM6rlbalqaL2Ah5E6IxqifDX-MJ_5AvxbMdmPjiSWBARO2q_S5-G-GoBkeB7xWKevHShqHSfAHeKB3vHJbrkYgM2TQbLEis6h3iybSzrmH8qTbbogzrIze55V9fCkgAgtEqLohh7MTJf3iXC8xv4O9bKrH7z3kjNac5irbfPMbq5Se1KtgTShlYbk-uUNaf9S5LIxXLcYrfi2PQJvx7itVpDVlrfM0pRo4JUcn7SLeNaI2yU9zeJ8s6uaTFyRExeFUyNoJyaFiUdN1PcD5M4bTfK_S9ZldDA1yV1rVvrn8HpWMEoRQFNz6uyopUzTxoo_hMsvnpryTFYbyHxvmx23tiZ8an_zfy5XXXGs9iP9o5Dpm72HDqxuM28MMh_M0pM30getTQQgBrGL8t5eeCQa30vlDV-IF5Jnv9d60zFzphKfRwmtVM5ltQAqoBEj4jAwVuImCWSPd1C3PUU2kTfMgjNDKFuBVJB8Z9yEF_RupDjnDKRo8BS_8cPZBdFz5Vl42MWn-gP9dj3uAAHlHusRMyGa2Xq4ZlASprtoHUtqr8ilGr6vFCJWCMX1kAjLeVEJgpVEgc7-2la2iFsZjOMeiVC4yrNj5jfvWB2mPBhsvNvAsz9HwztQrjpf3kqC3txoATznaU2CaDfeTgjdOe3OUAEfTuvnBEUBQs2PSQTboBAqp3ZWpqYSA4-vfIJXHUjFrDY0ZK5WY-207tH2Mu1s8r617OHpxACGwvnckj7f1Kr9n7EfRYAYD7Jf26-MaoxxNbKurfBpSOTgS0B3HbKgvUGsxzUhkqHMjKIIYuKTofvUFqZTTZ9iMtXHsP4z7c3VjHfruqXcZD2VXDEsqueoTPEZe8oLc8xZRNOEp2SXfaf46O2EuIpAybW0Df9bi4dPQ-LDTGkQwvc55W-QBRYg3zWMZZ1jjhSxVzc2PEDSR0Sg3Ozr1XwTwixVfeLdUS25BlaNtgq80UEHaEuS3nIbiCQrZ3nqgWU2oGqCPF1FMQei6LO9hzQ8JxZUpHw659pQqknr4xjLDmuq3ALmk8cVlWCw5C6Z1se_SmhsczGhZpYb0SAtIGWjbMrzMTr3eXnEnQ_F5j7anOMOdKBSBV1imDhaVGlJ0zn_1CbnhDWp3NEAspZzQMJPg2HbTsIQ8bpxBSHtPCN1C3PNgzkNRtlLOTu-Eki-kLHfiNsDXFpt44JqVEmwDVE-rD-x8Vn3SlE51Mx5jBy6Et4_TzG7rHn_tQjG9MVql83u3OrkjBHfujnKI5SynEWSgG8e6KzWBkuClaYlx-_qT-9_PT-r7TFw7-hf3-5LGhfqWcV_z-vyIRYkH8bWT7DbdYbVbyZy0_)
 Press to play around with this diagram source online.
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/2.8.png)
 
@@ -432,15 +432,15 @@ to fix a typo, or get feedback as we go. Not all steps are shown here -
 only the final ones - but the PlantUML source code files for each step
 are in the directory with the source and documentation.
 
-</div>
+
 
 ### First Pass
 
-<div class="uml" align="center">
 
-![](/docs/aws/2.6.png)
 
-</div>
+![](/docs/aws/2.6.png) 
+
+
 
 #### Play
 
@@ -586,11 +586,11 @@ SNS1 -down-> SESEmail
 2.  Use `` `together ``\` to group the SQS and File processing icons.
 3.  I did not change the boxes line style or colour.
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/2.8.png)
 
-</div>
+
 
 #### Play
 
@@ -737,11 +737,11 @@ footer %filename() rendered with PlantUML version %version()\nThe Hitchhiker’s
 [<img src="../play.png" width="40" alt="playbutton_aws30" />](http://www.plantuml.com/plantuml/uml/VP3BRnD13CRlyrUOlH0aiX45BX6g6g8AzO24j3pEpewRjU9vC8-cLTN_7IVBAfK8lUnuxD_tVPwzoWLJgKxCA_QzL4lm2VTPUBDO_UhMmRdWBy_EEdPH-9R9jb7rPo1LnrfeWIB_GrpOiBn8RCbJGda9-P92ZJTzyFaPPI3ls4TCw43OKtc81378m-5YNf-RXbI6O4p4VeTRWaOV2Mi9rJRmQAxN5xFEeQNxjz2C1NIKxhYdHZlGl35Fnlp8bFBi-DNcyPoctnDQBXmyoa57QRQor_VzW7vBYgmiJBT9yVNuSsRZeRrlTIES1qg0CK98iAVDn8x9CBTXx-UNC6gMyAw5dvovvBzcC4-y7OeIf_0bNBJG5Km5iFQ73SrfU1ACRrx2-nO-iuL4lolb0WkjSWm-ana9c0lTbcSxV53t8UmrSLpoNykFBToug3vPmzMn5-vtUhBF1KMqeZlo1HwdKBPFvegyhKx-0000_)
 Press to play around with this diagram source online.
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/3.8.png)
 
-</div>
+
 
 #### Source
 
@@ -898,11 +898,11 @@ BBVA -d-> Appstream2_02
 > Simplified off (by commenting out the simplified header) so we can see
 > the icon name.
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/3.1.png)
 
-</div>
+
 
 #### Source
 
@@ -943,11 +943,11 @@ listsprites
 
 ### Add Text and Simplify The Icons
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/3.3.png)
 
-</div>
+
 
 #### Source
 
@@ -991,11 +991,11 @@ Cloudalt(Cloudalt, " ", " ")
 
 ### Draw Boxes
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/3.4.png)
 
-</div>
+
 
 #### Source
 
@@ -1044,11 +1044,11 @@ components. It is informative to see how to do it.
 In the future, this functionality could be part of stdlib so we don't
 have to.
 
-<div class="uml" align="center">
+
 
 ![](/docs/aws/3.8.png)
 
-</div>
+
 
 #### Source
 
