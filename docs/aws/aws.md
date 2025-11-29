@@ -39,7 +39,7 @@ Press to play around with this diagram source online.
 
 <div class="uml" align="center">
 
-1.7.puml
+![](/docs/aws/1.7.png)
 
 </div>
 
@@ -94,7 +94,7 @@ We can see all the icons here:
 
 <div class="uml" align="center">
 
-1.1.puml
+![](/docs/aws/1.1.png)
 
 </div>
 
@@ -169,7 +169,7 @@ Mobile(Mobile, "label", "tech")
 
 <div class="uml" align="center">
 
-1.2.puml
+![](/docs/aws/1.2.png)
 
 </div>
 
@@ -202,7 +202,7 @@ Mobile(Mobile, "Publisher app or web", " ")
 
 <div class="uml" align="center">
 
-1.3.puml
+![](/docs/aws/1.3.png)
 
 </div>
 
@@ -236,7 +236,7 @@ Mobile(Mobile, "Publisher app or web", " ")
 
 <div class="uml" align="center">
 
-1.4.puml
+![](/docs/aws/1.4.png)
 
 </div>
 
@@ -275,7 +275,7 @@ Users -right-> Smadex: 5. Impression / click / install / event {request id}
 
 <div class="uml" align="center">
 
-1.5.puml
+![](/docs/aws/1.5.png)
 
 </div>
 
@@ -320,7 +320,7 @@ Users -right-> Smadex: 5. Impression / click / install / event {request id}
 
 <div class="uml" align="center">
 
-1.6.puml
+![](/docs/aws/1.6.png)
 
 </div>
 
@@ -363,7 +363,7 @@ Users -right-> Smadex: 5. Impression / click / install / event {request id}
 
 <div class="uml" align="center">
 
-1.7.puml
+![](/docs/aws/1.7.png)
 
 </div>
 
@@ -417,7 +417,7 @@ Press to play around with this diagram source online.
 
 <div class="uml" align="center">
 
-2.8.puml
+![](/docs/aws/2.8.png)
 
 In general, I recommend starting a diagram without forcing the arrow
 directions to let PlantUML optimise the layout; then tweak the result.
@@ -438,7 +438,7 @@ are in the directory with the source and documentation.
 
 <div class="uml" align="center">
 
-2.6.puml
+![](/docs/aws/2.6.png)
 
 </div>
 
@@ -588,7 +588,7 @@ SNS1 -down-> SESEmail
 
 <div class="uml" align="center">
 
-2.8.puml
+![](/docs/aws/2.8.png)
 
 </div>
 
@@ -739,7 +739,7 @@ Press to play around with this diagram source online.
 
 <div class="uml" align="center">
 
-3.8.puml
+![](/docs/aws/3.8.png)
 
 </div>
 
@@ -900,7 +900,7 @@ BBVA -d-> Appstream2_02
 
 <div class="uml" align="center">
 
-3.1.puml
+![](/docs/aws/3.1.png)
 
 </div>
 
@@ -945,7 +945,7 @@ listsprites
 
 <div class="uml" align="center">
 
-3.3.puml
+![](/docs/aws/3.3.png)
 
 </div>
 
@@ -993,7 +993,7 @@ Cloudalt(Cloudalt, " ", " ")
 
 <div class="uml" align="center">
 
-3.4.puml
+![](/docs/aws/3.4.png)
 
 </div>
 
@@ -1046,7 +1046,7 @@ have to.
 
 <div class="uml" align="center">
 
-3.8.puml
+![](/docs/aws/3.8.png)
 
 </div>
 
