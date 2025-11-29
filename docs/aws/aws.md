@@ -135,7 +135,7 @@ listsprites
 
 
 
-1.puml
+![](/docs/aws/1.png)
 
 
 
